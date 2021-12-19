@@ -94,14 +94,16 @@ namespace Dal
                 return db.Foods.ToList();
             }
         }
-        public static void SaveUserMenu(List<UserMenuItem> menu)
+        public static List<UserMenuItem> SaveUserMenu(List<UserMenuItem> menu)
         {
-            var menuCopy = menu.Select(m => new UserMenuItem { FoodId = m.FoodId, Grams = m.Grams, MealTime = m.MealTime, UserId = m.UserId});
+            var menuCopy = menu.Select(m => new UserMenuItem { FoodId = m.FoodId, Grams = m.Grams, MealTime = m.MealTime, UserId = m.UserId}).ToList();
             using (var db = new MainDBContext())
             {
                 db.UserMenuItems.AddRange(menuCopy);
                 db.SaveChanges();
+                menuCopy.ForEach(f => db.Entry(f).Reference(r => r.Food).Load());
             }
+            return menuCopy;
         }
         public static void DeleteUserMenu(List<UserMenuItem> menu)
         {

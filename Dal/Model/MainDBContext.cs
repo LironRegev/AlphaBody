@@ -27,7 +27,7 @@ namespace Dal.Model
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<UserDislike>().HasKey(e => new { e.UserId, e.FoodId });
+            modelBuilder.Entity<UserDislike>().HasKey(e => new { e.UserId, e.FoodId }); 
         }
     }
 }

@@ -27,13 +27,12 @@ The project loosely implements the **Factory** and **Singleton** design pattern.
 
 - _ **Download the code source:** _
 
-Download or clone the Github code from: [https://github.com/pildus/OPD](https://github.com/pildus/OPD)
+Download or clone the Github code from: [https://github.com/LironRegev/AlphaBody.git](https://github.com/LironRegev/AlphaBody.git)
 
 - _ **Running the project:** _
+Upon Loading, the projects verify if the Database exists. If the database does not exist, go to the package manager console and set the Default project to "Dal" and write "Update-Database". 
 
 Set project AlphaBodyFirst as startup project, Build And Run solution.
-
-Upon Loading, the projects verify if the Database exists. If the database does not exist, go to the package manager console and write "add-migration" and after that "Update-Database"
 
 The Login and Registration screen should appear choose one of the options.
 

@@ -112,8 +112,7 @@ namespace BL
             {
                 item.UserId = _user.Id;
             }
-            _user.UserMenuItems = menu;
-            DBOperations.SaveUserMenu(menu);
+            _user.UserMenuItems = DBOperations.SaveUserMenu(menu);
         }
         public UserInfo GetUserInfo()
         {

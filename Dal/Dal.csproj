@@ -172,9 +172,9 @@
     <Compile Include="Migrations\20211126154219_Data.Designer.cs" />
     <Compile Include="Migrations\20211127122651_UsersData.cs" />
     <Compile Include="Migrations\20211127122651_UsersData.Designer.cs" />
-    <Compile Include="Migrations\20211204175727_Initial.cs" />
-    <Compile Include="Migrations\20211204175727_Initial.designer.cs">
-      <DependentUpon>20211204175727_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\20211125175727_Initial.cs" />
+    <Compile Include="Migrations\20211125175727_Initial.designer.cs">
+      <DependentUpon>20211125175727_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\20211212145702_GoalDefinition.cs" />
     <Compile Include="Migrations\20211212145702_GoalDefinition.designer.cs">
